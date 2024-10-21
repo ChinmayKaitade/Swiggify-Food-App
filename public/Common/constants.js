@@ -5,10 +5,10 @@ export const IMG_CDN_URL = `${process.env.REACT_MEDIA_ASSETS_BASE_URL}image/uplo
 export const ITEM_IMG_CDN_URL = `${process.env.REACT_MEDIA_ASSETS_BASE_URL}image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/`;
 
 // Swiggy API to get Restaurant data using foodfire server
-export const FOODFIRE_API_URL = `${process.env.REACT_FOODFIRE_APP_BASE_URL}restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING`;
+export const FOODFIRE_API_URL = `${process.env.REACT_SWIGGIFY_APP_BASE_URL}restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING`;
 
 // Swiggy API to get Restaurant Menu data using foodfire server
-export const FOODFIRE_MENU_API_URL = `${process.env.REACT_FOODFIRE_APP_BASE_URL}menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=`;
+export const FOODFIRE_MENU_API_URL = `${process.env.REACT_SWIGGIFY_APP_BASE_URL}menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=`;
 
 // shimmer card unit
 export const shimmer_card_unit = 20;
@@ -17,18 +17,17 @@ export const shimmer_card_unit = 20;
 export const shimmer_menu_card_unit = 10;
 
 // Github - username
-export const Github_UserName = "ChinmayKaitade";
-export const Github_Repository_Name = "Swiggify-Food-App";
+export const Github_UserName = "ChetanNada";
+export const Github_Repository_Name = "Namaste-React";
 
 // Github API for User
 export const Github_API_User = "https://api.github.com/users/";
 
 // Social Media Links
-export const Linkedin_Link =
-  "https://www.linkedin.com/in/chinmay-sharad-kaitade/";
-export const Twitter_Link = "https://twitter.com/chinmaydotcom";
-export const Github_Link = "https://github.com/ChinmayKaitade";
-export const Email_Link = "mailto:chinmaykaitade123@gmail.com";
+export const Linkedin_Link = "https://www.linkedin.com/in/chetannada/";
+export const Twitter_Link = "https://twitter.com/ChetanNada";
+export const Github_Link = "https://github.com/chetannada";
+export const Email_Link = "mailto:call2chetannada@gmail.com";
 
 // Github Authorization Token
 export const options = {

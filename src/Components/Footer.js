@@ -9,7 +9,7 @@ const Footer = () => {
         href="https://www.linkedin.com/in/chinmay-sharad-kaitade/"
         target="_blank"
       >
-        ChinmayKaitade
+        Chinmay Kaitade
       </a>
       <i className="fa-solid fa-copyright"></i>
       {year}
