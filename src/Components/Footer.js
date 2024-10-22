@@ -8,6 +8,7 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/chinmay-sharad-kaitade/"
         target="_blank"
+        title="Chinmay Kaitade's Linkedin Profile"
       >
         Chinmay Kaitade
       </a>

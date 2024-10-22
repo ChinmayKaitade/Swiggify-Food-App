@@ -1,7 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { FOODFIRE_API_URL } from "../../public/Common/constants";
+import { SWIGGIFY_API_URL } from "../../public/Common/constants";
+import { Link } from "react-router-dom";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
@@ -28,7 +29,7 @@ const Body = () => {
   async function getRestaurants() {
     // handle the error using try... catch
     try {
-      const response = await fetch(FOODFIRE_API_URL);
+      const response = await fetch(SWIGGIFY_API_URL);
       const json = await response.json();
 
       // initialize checkJsonData() function to check Swiggy Restaurant data
@@ -64,7 +65,9 @@ const Body = () => {
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
       if (filteredData?.length === 0) {
-        setErrorMessage("No matches restaurant found");
+        setErrorMessage(
+          `Sorry, we couldn't find any results for "${searchText}"`
+        );
       }
     } else {
       setErrorMessage("");
@@ -106,10 +109,12 @@ const Body = () => {
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
           {filteredRestaurants.map((restaurant) => {
             return (
-              <RestaurantCard
+              <Link
+                to={"/restaurant/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
-                {...restaurant?.info}
-              />
+              >
+                <RestaurantCard {...restaurant?.info} />
+              </Link>
             );
           })}
         </div>
