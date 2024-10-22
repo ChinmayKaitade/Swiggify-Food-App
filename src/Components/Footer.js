@@ -8,15 +8,21 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/chinmay-sharad-kaitade/"
         target="_blank"
-        title="Chinmay Kaitade's Linkedin Profile"
+        title="Chetan Nada's Linkedin Profile"
       >
         Chinmay Kaitade
       </a>
       <i className="fa-solid fa-copyright"></i>
       {year}
-      <strong>
-        Swiggify<span>FoodApp</span>
-      </strong>
+      <a
+        href="https://github.com/ChinmayKaitade/Swiggify-Food-App"
+        target="_blank"
+        title="Swiggify Food App Github Repository"
+      >
+        <strong>
+          Swiggify<span>FoodApp</span>
+        </strong>
+      </a>
     </div>
   );
 };

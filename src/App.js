@@ -1,11 +1,10 @@
 // ## Namaste React Course by Akshay Saini
-// Chapter 08 - Let's get Classy
+// Chapter 09 - Optimizing our App
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import Body from "./Components/Body";
 import Header from "./Components/Header";
+import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Error from "./Components/Error";
@@ -37,9 +36,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
 const AppLayout = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Outlet />
-      <Footer />
+      <div className="app">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 };
